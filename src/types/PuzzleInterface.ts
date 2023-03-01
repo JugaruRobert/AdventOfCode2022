@@ -1,4 +1,6 @@
 export interface PuzzleInterface {
-  solveFirst: () => string;
-  solveSecond: () => string;
+  solveFirst: () => PuzzeResult;
+  solveSecond: () => PuzzeResult;
 }
+
+export type PuzzeResult = string | number;

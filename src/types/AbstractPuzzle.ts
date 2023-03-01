@@ -1,4 +1,4 @@
-import { PuzzleInterface } from './PuzzleInterface';
+import { PuzzeResult, PuzzleInterface } from './PuzzleInterface';
 
 export default abstract class Puzzle implements PuzzleInterface {
   protected input: string;
@@ -7,6 +7,6 @@ export default abstract class Puzzle implements PuzzleInterface {
     this.input = input;
   }
 
-  public abstract solveFirst(): string;
-  public abstract solveSecond(): string;
+  public abstract solveFirst(): PuzzeResult;
+  public abstract solveSecond(): PuzzeResult;
 }
