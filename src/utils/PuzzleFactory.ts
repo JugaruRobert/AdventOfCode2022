@@ -5,6 +5,7 @@ class PuzzleFactory {
   public async getPuzzle(puzzleName: string) {
     const puzzlePath = `src/days/${puzzleName}`;
     let input = '';
+
     try {
       input = await readFile(`${puzzlePath}/input.txt`);
     } catch (error) {
